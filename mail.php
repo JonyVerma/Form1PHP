@@ -5,9 +5,9 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$mailheader = "From:".$name."<".$email.">\r\n"
+$mailheader = "From:".$name."<".$email.">\r\n";
 
-$recipient = "jonyverma637@gmail.com"
+$recipient = "jonyverma637@gmail.com";
 
 mail($recipient, $subject, $message, $mailheader)
 or die("Error!");
